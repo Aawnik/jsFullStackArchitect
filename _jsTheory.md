@@ -37,3 +37,57 @@
 <!-- =================================== -->
 ### **ScopeChain**
 - When code tries to access a variable, the engine first looks in the current scope. If it's not found, it looks in the outer scope, and then the next outer scope, and so on, all the way up to the global scope. This "chain" of nested scopes is called the scope chain. If the variable isn't found anywhere in the chain, a `ReferenceError` is thrown. This is how closures are able to access variables from their parent functions.
+<!-- ======================================== -->
+## 02_Core Concept: Fundamentals (DataTypes, Operators, Conditionals, Loops & Functions)
+### DataTypes
+- Primitive Types
+  - string : Text data, '',"",``
+  - number : Both integers and floating Numbers (42, 5.116)
+  - boolean : Logical values, True/False
+  - null : absence of any value
+  - undefined : variable that has beed declared but not initialized
+  - symbol
+  - bigInt
+- StructuralTypes
+  - Object,Arrays : collection of key-value pairs
+  - function, the block of code performing the particular task.
+### Operators
+- Arthematic : +, -, *, /, %
+- Comparision : ===, !== Most prefered over ==, != as these causes **typeCoercion** (where JS automatically converts the values from one dataType to another.Ex.. '5'==5 => False).
+- Logical : &&, ||, !
+- Ternary operator : the shortcut of if statement
+  - `condition ? valueIfTrue : valueIfFalse
+### Conditionals
+- controls the execution flow of the code based on the conditions.
+  - if/else : standard way to execute the code block condotionally.
+  - switch : efficient way to compare oneValue against multiple possible cases.
+### Loop & Iteration
+- Repeatedly executing the block of code.
+  - Traditional Loops : for, while, do-while
+  - Modern Iteration Methods
+    - forEach()
+    - map()
+    - filter()
+### Functions
+- The reusable block of code.
+  - FunctionDeclaration
+    ```js
+    function funcName(){...}  // Hoisted
+    ```
+  - FunctionExpression
+    ```javascript
+    const func = function funcname(){....}  //notHoisted
+    ```
+    | A function expression assigned to a var, let, or const follows the hoisting rules of that keyword. The variable is hoisted, but the function body is not, so you cannot call it before the assignment.
+  - ArrowFunction
+    ```javascript
+        const myFunc = ()=>{...}
+    ```
+> NOTE : Truthiness_&_Falsiness
+    > FalsyValues__ false, 0, "", null, undefined, NaN
+    > TruthyValues__ [], {}
+>Short-Circuiting__used by &&, || operators. Generally used for defaults, conditionalFunction execution
+    > &&, stops and returns the first falsy value it finds.
+    > ||, stops & returns the first truthy value if finds.
+    > `const port = process.env || 3000;
+    > `user.isAdmin && deletePost()`, deletePost() function will only be called if user.isAdmin is truthy. If it's falsy, the expression short-circuits, and the function is never executed.
