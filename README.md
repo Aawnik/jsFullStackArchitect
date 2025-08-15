@@ -1,12 +1,12 @@
 # jsFullStackArchitect
 ### jsTheory
-[jsTheory](_jsTheory.md)
+[jsTheory](js_Theory.md)
 
 ### jsInterviewPrep
-[jsInterviewPrep](_jsInterviewPrep.md)
+[jsInterviewPrep](js_InterviewPrep.md)
 
 ### dataStructureConcepts
-[dataStructureConceptsext](_dataStructureConcepts.md)
+[dataStructureConceptsext](dataStructureConcepts.md)
 
 ### technicalDiscussion
-[technicalDiscussion](_technicalDiscussion.md)
+[technicalDiscussion](js_technicalDiscussion.md)
